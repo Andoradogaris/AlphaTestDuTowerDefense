@@ -829,7 +829,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1748,7 +1748,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.5735764, y: -0, z: -0, w: 0.8191521}
-  m_LocalPosition: {x: 38.2, y: 78.23, z: 1.72}
+  m_LocalPosition: {x: 26.7, y: 78.23, z: 30.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2142303385}
@@ -1858,8 +1858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 84.9, y: 35.3}
-  m_SizeDelta: {x: 169.9, y: 70.4}
+  m_AnchoredPosition: {x: 126.70001, y: 50.299988}
+  m_SizeDelta: {x: 253.6, y: 100.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558640530
 MonoBehaviour:
@@ -1882,7 +1882,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3374,9 +3374,9 @@ MonoBehaviour:
   waves:
   - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
     count1: 4
-    rate1: 1
+    rate1: 0.75
     enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 1
+    count2: 0
     rate2: 1
     enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
     count3: 0
@@ -3385,28 +3385,28 @@ MonoBehaviour:
     count1: 1
     rate1: 1
     enemy2: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count2: 4
+    count2: 5
     rate2: 1
     enemy3: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count3: 2
+    count3: 0
     rate3: 2
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 8
-    rate1: 1.5
+  - enemy1: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
+    count1: 3
+    rate1: 1.75
     enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 2
+    count2: 5
     rate2: 1
     enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
     count3: 0
     rate3: 1.5
   - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 3
+    count1: 5
     rate1: 2
     enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 5
+    count2: 4
     rate2: 1
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 2
+    enemy3: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
+    count3: 3
     rate3: 1
   - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
     count1: 8
@@ -3462,24 +3462,6 @@ MonoBehaviour:
     enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
     count3: 4
     rate3: 1
-  - enemy1: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count1: 12
-    rate1: 1.5
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 9
-    rate2: 3
-    enemy3: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count3: 0
-    rate3: 1
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 14
-    rate1: 2
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 7
-    rate2: 2
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 9
-    rate3: 2
   spawnPoint: {fileID: 1464402275}
   timeBetweenWaves: 5
   waveCountdownTimer: {fileID: 1969089968}
@@ -3536,7 +3518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1872409714}
-  sceneFader: {fileID: 2081655314}
   completeLevelUI: {fileID: 0}
 --- !u!114 &732405762
 MonoBehaviour:
@@ -3600,6 +3581,11 @@ Prefab:
       propertyPath: m_Name
       value: Waypoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1342343426406070, guid: f0dbed5287d99f24b8538835f761556d, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0dbed5287d99f24b8538835f761556d, type: 2}
   m_IsPrefabAsset: 0
@@ -3697,6 +3683,11 @@ Prefab:
       propertyPath: m_Name
       value: Waypoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1342343426406070, guid: f0dbed5287d99f24b8538835f761556d, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0dbed5287d99f24b8538835f761556d, type: 2}
   m_IsPrefabAsset: 0
@@ -5599,6 +5590,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1342343426406070, guid: f0dbed5287d99f24b8538835f761556d, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0dbed5287d99f24b8538835f761556d, type: 2}
   m_IsPrefabAsset: 0
@@ -6825,7 +6821,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GAMEOVER
+  m_Text: GAME OVER
 --- !u!222 &1840038803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7477,7 +7473,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: 'CONTINUE
+
+'
 --- !u!222 &2074163797
 CanvasRenderer:
   m_ObjectHideFlags: 0

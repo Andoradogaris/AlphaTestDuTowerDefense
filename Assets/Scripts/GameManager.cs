@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverUI;
 
-    public SceneFader sceneFader;
 
     public GameObject completeLevelUI;
 
