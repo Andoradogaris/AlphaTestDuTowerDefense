@@ -20,13 +20,19 @@ public class BuildManager : MonoBehaviour
     public GameObject buildEffect;
     public GameObject sellEffect;
 
+    private TrapBlueprint trapToBuild;
+    private TrapNode selectedTrapNode;
+
     private TurretBlueprint turretToBuild;
     private Node selectedNode;
 
     public NodeUI nodeUI;
 
-    public bool canBuild { get { return turretToBuild != null; } }
+    public bool canBuildTower { get { return turretToBuild != null; } }
+    public bool canBuildTrap { get { return trapToBuild != null; } }
     public bool hasMoney { get { return PlayerStats.money >= turretToBuild.cost; } }
+
+
 
     public void SelectTurretToBuild(TurretBlueprint turret)
     {
@@ -34,9 +40,20 @@ public class BuildManager : MonoBehaviour
         DeselectNode();
     }
 
+    public void SelectTrapToBuild(TrapBlueprint trapBomb)
+    {
+        trapToBuild = trapBomb;
+        DeselectTrapNode();
+    }
+
     public TurretBlueprint GetTurretToBuild()
     {
         return turretToBuild;
+    }
+
+    public TrapBlueprint GetTrapToBuild()
+    {
+        return trapToBuild;
     }
 
     public void SelectNode(Node node)
@@ -54,10 +71,28 @@ public class BuildManager : MonoBehaviour
         nodeUI.SetTarget(node);
     }
 
+    public void SelectTrapNode(TrapNode trapNode)
+    {
+
+        if (trapNode == selectedTrapNode)
+        {
+            DeselectTrapNode();
+            return;
+        }
+
+        selectedTrapNode = trapNode;
+        trapToBuild = null;
+    }
+
     public void DeselectNode()
     {
         selectedNode = null;
         nodeUI.Hide();
+    }
+
+    public void DeselectTrapNode()
+    {
+        selectedTrapNode = null;
     }
 
 }

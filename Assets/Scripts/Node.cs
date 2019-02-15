@@ -60,6 +60,7 @@ public class Node : MonoBehaviour
 
     private void BuildTurret(TurretBlueprint blueprint)
     {
+
         if (PlayerStats.money < blueprint.cost)
         {
             Debug.Log("Pas assez d'argent pour cela");
@@ -104,7 +105,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (!buildManager.canBuild)
+        if (!buildManager.canBuildTower)
         {
             return;
         }
@@ -119,7 +120,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (!buildManager.canBuild)
+        if (!buildManager.canBuildTower)
         {
             return;
         }
