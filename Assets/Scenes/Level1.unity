@@ -3694,6 +3694,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1872409714}
+  nextLevel: Level02
+  levelToUnlock: 2
+  sceneFader: {fileID: 688137665}
   completeLevelUI: {fileID: 0}
 --- !u!114 &732405762
 MonoBehaviour:
