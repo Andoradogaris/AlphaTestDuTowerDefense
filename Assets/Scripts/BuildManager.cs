@@ -40,9 +40,9 @@ public class BuildManager : MonoBehaviour
         DeselectNode();
     }
 
-    public void SelectTrapToBuild(TrapBlueprint trapBomb)
+    public void SelectTrapToBuild(TrapBlueprint trap)
     {
-        trapToBuild = trapBomb;
+        trapToBuild = trap;
         DeselectTrapNode();
     }
 

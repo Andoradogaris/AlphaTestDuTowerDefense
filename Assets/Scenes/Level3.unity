@@ -188,6 +188,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4617644538218560, guid: ff2d1384be855864aaaff365b1f77084,
     type: 2}
   m_PrefabInternal: {fileID: 35150074}
+--- !u!1001 &49640491
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2142303385}
+    m_Modifications:
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -12.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 11.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.40821788
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.23456968
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.10938163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8754261
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &50416568
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,72 +846,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &170076733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 170076735}
-  - component: {fileID: 170076734}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &170076734
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170076733}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &170076735
+--- !u!4 &170076735 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -6.42, y: -12.29, z: 11.11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2142303385}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_CorrespondingSourceObject: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef,
+    type: 2}
+  m_PrefabInternal: {fileID: 49640491}
 --- !u!1 &209023825
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,21 +961,51 @@ MonoBehaviour:
   standardTurret:
     prefab: {fileID: 1252158517327366, guid: 7ec4e708b3b1a454ea40022f1c00e8ce, type: 2}
     cost: 100
-    upgradedPrefab: {fileID: 1384813200691568, guid: 85f0bababe7d9e84eb0d78eb52dc04fe,
-      type: 2}
-    upgradeCost: 60
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
   missileLauncherTurret:
     prefab: {fileID: 1249713845657978, guid: 9f4f2cfb2b4629348b53069f1462a2b1, type: 2}
     cost: 250
-    upgradedPrefab: {fileID: 1249713845657978, guid: 0a7f7218a37526c40af72fdfc27658e5,
-      type: 2}
-    upgradeCost: 150
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
   laserBeamerTurret:
     prefab: {fileID: 1129674820563134, guid: a3f011b7cf2d1584a970354060d39bb2, type: 2}
     cost: 350
-    upgradedPrefab: {fileID: 1129674820563134, guid: c5dd1744b377211468c5b3e2fbf8b34f,
-      type: 2}
-    upgradeCost: 250
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
+  prefabPoison:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
+  prefabMolotov:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
+  prefabTsar:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
 --- !u!1 &229020769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3518,6 +3529,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1872409714}
+  nextLevel: LevelSelect
+  levelToUnlock: 2
+  sceneFader: {fileID: 688137665}
   completeLevelUI: {fileID: 0}
 --- !u!114 &732405762
 MonoBehaviour:
@@ -7717,8 +7731,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 641392589}
   sellAmount: {fileID: 137527229}
-  upgradeCost: {fileID: 303214310}
-  upgradeButton: {fileID: 623776888}
+  upgradeA1Cost: {fileID: 0}
+  upgradeA1Button: {fileID: 0}
+  upgradeA2Cost: {fileID: 0}
+  upgradeA2Button: {fileID: 0}
+  upgradeA3Cost: {fileID: 0}
+  upgradeA3Button: {fileID: 0}
+  upgradeA4Cost: {fileID: 0}
+  upgradeA4Button: {fileID: 0}
+  upgradeA5Cost: {fileID: 0}
+  upgradeA5Button: {fileID: 0}
 --- !u!1 &2142303384
 GameObject:
   m_ObjectHideFlags: 0

@@ -39,18 +39,18 @@ public class Shop : MonoBehaviour
     public void SelectPoisonPrefabTrap()
     {
         Debug.Log("Piège poison selectionné");
-        buildManager.SelectTurretToBuild(laserBeamerTurret);
+        buildManager.SelectTrapToBuild(prefabPoison);
     }
 
     public void SelectMolotovPrefabTrap()
     {
         Debug.Log("Coktaïl Molotov selectionné");
-        buildManager.SelectTurretToBuild(laserBeamerTurret);
+        buildManager.SelectTrapToBuild(prefabMolotov);
     }
 
     public void SelectTsarPrefabTrap()
     {
         Debug.Log("Bombe Tsar selectionnée");
-        buildManager.SelectTurretToBuild(laserBeamerTurret);
+        buildManager.SelectTrapToBuild(prefabTsar);
     }
 }

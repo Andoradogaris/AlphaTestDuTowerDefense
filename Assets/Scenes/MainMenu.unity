@@ -453,7 +453,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.4
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -462,13 +462,13 @@ Light:
     m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 2
+    m_NormalBias: 0
+    m_NearPlane: 0.1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -486,13 +486,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: -0.3294194, y: 0.2287595, z: -0.2962805, w: -0.8668159}
+  m_LocalRotation: {x: -0.26026556, y: 0.3378998, z: -0.37282327, w: -0.82406825}
   m_LocalPosition: {x: -2.7, y: 8.29, z: -15.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1518581435}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 135.037, y: -556.536, z: -149.14099}
+  m_LocalEulerAnglesHint: {x: 137.08499, y: -569.698, z: -143.213}
 --- !u!4 &239161535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4203387085508350, guid: f0dbed5287d99f24b8538835f761556d,
@@ -3404,6 +3404,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 280672359}
+  nextLevel: LevelSelect
+  levelToUnlock: 2
   sceneFader: {fileID: 1501937645}
   completeLevelUI: {fileID: 0}
 --- !u!4 &1847360613
