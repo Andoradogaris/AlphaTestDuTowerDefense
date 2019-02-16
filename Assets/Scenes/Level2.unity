@@ -3803,8 +3803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1872409714}
-  nextLevel: LevelSelect
-  levelToUnlock: 2
   sceneFader: {fileID: 0}
   completeLevelUI: {fileID: 0}
 --- !u!114 &732405762
@@ -7024,7 +7022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab0811a2fb8fa9542883251f35dc5617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundsText: {fileID: 1877838402}
   sceneFader: {fileID: 688137665}
   menuSceneName: MainMenu
 --- !u!95 &1872409717

@@ -1129,21 +1129,51 @@ MonoBehaviour:
   standardTurret:
     prefab: {fileID: 1252158517327366, guid: 7ec4e708b3b1a454ea40022f1c00e8ce, type: 2}
     cost: 100
-    upgradedPrefab: {fileID: 1384813200691568, guid: 85f0bababe7d9e84eb0d78eb52dc04fe,
-      type: 2}
-    upgradeCost: 60
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
   missileLauncherTurret:
     prefab: {fileID: 1249713845657978, guid: 9f4f2cfb2b4629348b53069f1462a2b1, type: 2}
     cost: 250
-    upgradedPrefab: {fileID: 1249713845657978, guid: 0a7f7218a37526c40af72fdfc27658e5,
-      type: 2}
-    upgradeCost: 150
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
   laserBeamerTurret:
     prefab: {fileID: 1129674820563134, guid: a3f011b7cf2d1584a970354060d39bb2, type: 2}
     cost: 350
-    upgradedPrefab: {fileID: 1129674820563134, guid: c5dd1744b377211468c5b3e2fbf8b34f,
-      type: 2}
-    upgradeCost: 250
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
+  prefabPoison:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
+  prefabMolotov:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
+  prefabTsar:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
 --- !u!1 &229020769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,6 +2190,10 @@ MonoBehaviour:
   scrollSpeed: 5
   minY: 10
   maxY: 80
+  minX: 40
+  maxX: 40
+  minZ: 10
+  maxZ: 10
 --- !u!1001 &551516727
 Prefab:
   m_ObjectHideFlags: 0
@@ -3617,113 +3651,14 @@ MonoBehaviour:
   gameManager: {fileID: 732405761}
   waves:
   - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 4
+    count1: 2
     rate1: 1
     enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 1
+    count2: 0
     rate2: 1
     enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
     count3: 0
     rate3: 0
-  - enemy1: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count1: 1
-    rate1: 1
-    enemy2: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count2: 4
-    rate2: 1
-    enemy3: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count3: 2
-    rate3: 2
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 8
-    rate1: 1.5
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 2
-    rate2: 1
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 0
-    rate3: 1.5
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 3
-    rate1: 2
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 5
-    rate2: 1
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 2
-    rate3: 1
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 8
-    rate1: 1
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 2
-    rate2: 2
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 4
-    rate3: 0.75
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 0
-    rate1: 1
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 12
-    rate2: 3
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 0
-    rate3: 1
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 10
-    rate1: 1.5
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 0
-    rate2: 3
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 0
-    rate3: 1
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 0
-    rate1: 1
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 0
-    rate2: 3
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 8
-    rate3: 1.5
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 8
-    rate1: 1.4
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 5
-    rate2: 2
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 6
-    rate3: 1.2
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 10
-    rate1: 2
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 0
-    rate2: 3
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 4
-    rate3: 1
-  - enemy1: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count1: 12
-    rate1: 1.5
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 9
-    rate2: 3
-    enemy3: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count3: 0
-    rate3: 1
-  - enemy1: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 2}
-    count1: 14
-    rate1: 2
-    enemy2: {fileID: 1032591596636490, guid: 8b788e62f08edf74abd4f0544703b2d2, type: 2}
-    count2: 7
-    rate2: 2
-    enemy3: {fileID: 1032591596636490, guid: 660107019dc77d84f99a29ca7fe79f9d, type: 2}
-    count3: 9
-    rate3: 2
   spawnPoint: {fileID: 1464402275}
   timeBetweenWaves: 5
   waveCountdownTimer: {fileID: 1969089968}
@@ -6999,7 +6934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab0811a2fb8fa9542883251f35dc5617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundsText: {fileID: 1877838402}
   sceneFader: {fileID: 688137665}
   menuSceneName: MainMenu
 --- !u!95 &1872409717
@@ -8062,8 +7996,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 641392589}
   sellAmount: {fileID: 137527229}
-  upgradeCost: {fileID: 303214310}
-  upgradeButton: {fileID: 623776888}
+  upgradeA1Cost: {fileID: 0}
+  upgradeA1Button: {fileID: 0}
+  upgradeA2Cost: {fileID: 0}
+  upgradeA2Button: {fileID: 0}
+  upgradeA3Cost: {fileID: 0}
+  upgradeA3Button: {fileID: 0}
+  upgradeA4Cost: {fileID: 0}
+  upgradeA4Button: {fileID: 0}
+  upgradeA5Cost: {fileID: 0}
+  upgradeA5Button: {fileID: 0}
 --- !u!1 &2142303384
 GameObject:
   m_ObjectHideFlags: 0
