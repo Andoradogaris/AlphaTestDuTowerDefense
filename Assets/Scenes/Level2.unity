@@ -813,11 +813,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!4 &170076735 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495,
-    type: 2}
-  m_PrefabInternal: {fileID: 1946238860}
 --- !u!1 &182992634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,21 +1063,51 @@ MonoBehaviour:
   standardTurret:
     prefab: {fileID: 1252158517327366, guid: 7ec4e708b3b1a454ea40022f1c00e8ce, type: 2}
     cost: 100
-    upgradedPrefab: {fileID: 1384813200691568, guid: 85f0bababe7d9e84eb0d78eb52dc04fe,
-      type: 2}
-    upgradeCost: 60
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
   missileLauncherTurret:
     prefab: {fileID: 1249713845657978, guid: 9f4f2cfb2b4629348b53069f1462a2b1, type: 2}
     cost: 250
-    upgradedPrefab: {fileID: 1249713845657978, guid: 0a7f7218a37526c40af72fdfc27658e5,
-      type: 2}
-    upgradeCost: 150
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
   laserBeamerTurret:
     prefab: {fileID: 1129674820563134, guid: a3f011b7cf2d1584a970354060d39bb2, type: 2}
     cost: 350
-    upgradedPrefab: {fileID: 1129674820563134, guid: c5dd1744b377211468c5b3e2fbf8b34f,
-      type: 2}
-    upgradeCost: 250
+    upgradedA1Prefab: {fileID: 0}
+    upgradeA1Cost: 0
+    upgradedA2Prefab: {fileID: 0}
+    upgradeA2Cost: 0
+    upgradedA3Prefab: {fileID: 0}
+    upgradeA3Cost: 0
+    upgradedA4Prefab: {fileID: 0}
+    upgradeA4Cost: 0
+    upgradedA5Prefab: {fileID: 0}
+    upgradeA5Cost: 0
+  prefabPoison:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
+  prefabMolotov:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
+  prefabTsar:
+    prefabTrap: {fileID: 0}
+    TrapCost: 0
 --- !u!1 &229020769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1589,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4617644538218560, guid: ff2d1384be855864aaaff365b1f77084,
     type: 2}
   m_PrefabInternal: {fileID: 383014897}
+--- !u!1001 &412821168
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2142303385}
+    m_Modifications:
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -12.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 11.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.40821788
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.23456968
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.10938163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8754261
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 720e81a2e3963624e89c4a5220676bef, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &412821169 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4713070158495034, guid: 720e81a2e3963624e89c4a5220676bef,
+    type: 2}
+  m_PrefabInternal: {fileID: 412821168}
 --- !u!1 &438880397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3723,6 +3803,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1872409714}
+  nextLevel: LevelSelect
+  levelToUnlock: 2
+  sceneFader: {fileID: 0}
   completeLevelUI: {fileID: 0}
 --- !u!114 &732405762
 MonoBehaviour:
@@ -7216,48 +7299,6 @@ Transform:
   m_Father: {fileID: 2129798549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1946238860
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2142303385}
-    m_Modifications:
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -12.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 11.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.40821788
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.23456968
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.10938163
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.8754261
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100693464429190, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: de0e26b7aa2398646b1f6bd1b3be2495, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1946958966
 GameObject:
   m_ObjectHideFlags: 0
@@ -8046,8 +8087,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 641392589}
   sellAmount: {fileID: 137527229}
-  upgradeCost: {fileID: 303214310}
-  upgradeButton: {fileID: 623776888}
+  upgradeA1Cost: {fileID: 0}
+  upgradeA1Button: {fileID: 0}
+  upgradeA2Cost: {fileID: 0}
+  upgradeA2Button: {fileID: 0}
+  upgradeA3Cost: {fileID: 0}
+  upgradeA3Button: {fileID: 0}
+  upgradeA4Cost: {fileID: 0}
+  upgradeA4Button: {fileID: 0}
+  upgradeA5Cost: {fileID: 0}
+  upgradeA5Button: {fileID: 0}
 --- !u!1 &2142303384
 GameObject:
   m_ObjectHideFlags: 0
@@ -8075,7 +8124,7 @@ Transform:
   m_Children:
   - {fileID: 732405758}
   - {fileID: 1964974916}
-  - {fileID: 170076735}
+  - {fileID: 412821169}
   - {fileID: 534669905}
   - {fileID: 1457034888}
   m_Father: {fileID: 0}
