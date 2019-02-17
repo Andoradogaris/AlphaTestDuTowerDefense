@@ -28,7 +28,7 @@ public class Turret : MonoBehaviour
 
     public string enemyTag = "Enemy";
     public Transform partToRotate;
-    private float turnSpeed = 6.5f;
+    private float turnSpeed = 8f;
     public Transform firePoint;
 
 
