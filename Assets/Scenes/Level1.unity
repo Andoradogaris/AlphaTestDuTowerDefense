@@ -1017,44 +1017,16 @@ MonoBehaviour:
     upgradedA1Prefab: {fileID: 1384813200691568, guid: 85f0bababe7d9e84eb0d78eb52dc04fe,
       type: 2}
     upgradeA1Cost: 100
-    upgradedA2Prefab: {fileID: 1308914918284562, guid: d339ca9752c0604488fb74184f2533cd,
-      type: 2}
-    upgradeA2Cost: 100
-    upgradedA3Prefab: {fileID: 1308914918284562, guid: 3f8153bd6432dad4d836d7e1833de4de,
-      type: 2}
-    upgradeA3Cost: 100
-    upgradedA4Prefab: {fileID: 1308914918284562, guid: cada4058b251a644ea77d21c61b42726,
-      type: 2}
-    upgradeA4Cost: 100
-    upgradedA5Prefab: {fileID: 1308914918284562, guid: 02aa256f6a4ea8c45a9012fa4d7ae03e,
-      type: 2}
-    upgradeA5Cost: 100
   missileLauncherTurret:
     prefab: {fileID: 1249713845657978, guid: 9f4f2cfb2b4629348b53069f1462a2b1, type: 2}
     cost: 225
     upgradedA1Prefab: {fileID: 0}
     upgradeA1Cost: 0
-    upgradedA2Prefab: {fileID: 0}
-    upgradeA2Cost: 0
-    upgradedA3Prefab: {fileID: 0}
-    upgradeA3Cost: 0
-    upgradedA4Prefab: {fileID: 0}
-    upgradeA4Cost: 0
-    upgradedA5Prefab: {fileID: 0}
-    upgradeA5Cost: 0
   laserBeamerTurret:
     prefab: {fileID: 1129674820563134, guid: a3f011b7cf2d1584a970354060d39bb2, type: 2}
     cost: 300
     upgradedA1Prefab: {fileID: 0}
     upgradeA1Cost: 0
-    upgradedA2Prefab: {fileID: 0}
-    upgradeA2Cost: 0
-    upgradedA3Prefab: {fileID: 0}
-    upgradeA3Cost: 0
-    upgradedA4Prefab: {fileID: 0}
-    upgradeA4Cost: 0
-    upgradedA5Prefab: {fileID: 0}
-    upgradeA5Cost: 0
   prefabPoison:
     prefabTrap: {fileID: 0}
     TrapCost: 0
@@ -8132,40 +8104,16 @@ MonoBehaviour:
     cost: 0
     upgradedA1Prefab: {fileID: 0}
     upgradeA1Cost: 0
-    upgradedA2Prefab: {fileID: 0}
-    upgradeA2Cost: 0
-    upgradedA3Prefab: {fileID: 0}
-    upgradeA3Cost: 0
-    upgradedA4Prefab: {fileID: 0}
-    upgradeA4Cost: 0
-    upgradedA5Prefab: {fileID: 0}
-    upgradeA5Cost: 0
   missileLauncherTurret:
     prefab: {fileID: 0}
     cost: 0
     upgradedA1Prefab: {fileID: 0}
     upgradeA1Cost: 0
-    upgradedA2Prefab: {fileID: 0}
-    upgradeA2Cost: 0
-    upgradedA3Prefab: {fileID: 0}
-    upgradeA3Cost: 0
-    upgradedA4Prefab: {fileID: 0}
-    upgradeA4Cost: 0
-    upgradedA5Prefab: {fileID: 0}
-    upgradeA5Cost: 0
   laserBeamerTurret:
     prefab: {fileID: 0}
     cost: 0
     upgradedA1Prefab: {fileID: 0}
     upgradeA1Cost: 0
-    upgradedA2Prefab: {fileID: 0}
-    upgradeA2Cost: 0
-    upgradedA3Prefab: {fileID: 0}
-    upgradeA3Cost: 0
-    upgradedA4Prefab: {fileID: 0}
-    upgradeA4Cost: 0
-    upgradedA5Prefab: {fileID: 0}
-    upgradeA5Cost: 0
   prefabPoison:
     prefabTrap: {fileID: 1219464546932322, guid: 669eeae0c6d1f4742a31a617e82935b6,
       type: 2}
@@ -8611,14 +8559,6 @@ MonoBehaviour:
   sellAmount: {fileID: 137527229}
   upgradeA1Cost: {fileID: 303214310}
   upgradeA1Button: {fileID: 623776888}
-  upgradeA2Cost: {fileID: 1129269417}
-  upgradeA2Button: {fileID: 623776888}
-  upgradeA3Cost: {fileID: 242313254}
-  upgradeA3Button: {fileID: 623776888}
-  upgradeA4Cost: {fileID: 2123644568}
-  upgradeA4Button: {fileID: 623776888}
-  upgradeA5Cost: {fileID: 1316306284}
-  upgradeA5Button: {fileID: 623776888}
 --- !u!1 &2142303384
 GameObject:
   m_ObjectHideFlags: 0
