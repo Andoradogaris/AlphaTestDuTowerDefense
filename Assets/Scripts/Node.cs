@@ -13,7 +13,7 @@ public class Node : MonoBehaviour
     [HideInInspector]
     public TurretBlueprint turretBlueprint;
     [HideInInspector]
-    public bool isA1Upgraded = false;
+    public bool isUpgraded = false;
 
     private Color startColor;
     private Renderer rend;
@@ -33,9 +33,33 @@ public class Node : MonoBehaviour
         return transform.position + positionOffset;
     }
 
+    public void UpgradeTurret()
+    {
+        if (PlayerStats.money < turretBlueprint.upgradeCost)
+        {
+            Debug.Log("Pas assez d'argent pour améliorer la tourelle.");
+            return;
+        }
+
+        PlayerStats.money -= turretBlueprint.upgradeCost;
+
+        // Supression de l'ancienne tourelle
+        Destroy(turret);
+
+        // Création de la nouvelle tourelle améliorée.
+        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 1f);
+
+        isUpgraded = true;
+
+        Debug.Log("Tourelle améliorée.");
+    }
+
     private void BuildTurret(TurretBlueprint blueprint)
     {
-
         if (PlayerStats.money < blueprint.cost)
         {
             Debug.Log("Pas assez d'argent pour cela");
@@ -64,35 +88,9 @@ public class Node : MonoBehaviour
 
         Destroy(turret);
         turretBlueprint = null;
-        isA1Upgraded = false;
+        isUpgraded = false;
     }
 
-    public void UpgradeA1Turret()
-    {
-        if (PlayerStats.money < turretBlueprint.upgradeA1Cost)
-        {
-            Debug.Log("Pas assez d'argent pour améliorer la tourterelle.");
-            return;
-        }
-
-        PlayerStats.money -= turretBlueprint.upgradeA1Cost;
-
-        // Supression de l'ancienne tourelle
-        Destroy(turret);
-
-        // Création de la nouvelle tourelle améliorée.
-        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedA1Prefab, GetBuildPosition(), Quaternion.identity);
-        turret = _turret;
-
-        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
-        Destroy(effect, 1f);
-
-        isA1Upgraded = true;
-
-        Debug.Log("Tourelle améliorée.");
-    }
-
-    #region
     private void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject())
@@ -106,7 +104,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (!buildManager.canBuildTower)
+        if (!buildManager.canBuild)
         {
             return;
         }
@@ -121,7 +119,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (!buildManager.canBuildTower)
+        if (!buildManager.canBuild)
         {
             return;
         }
@@ -141,5 +139,5 @@ public class Node : MonoBehaviour
     {
         rend.material.color = startColor;
     }
-    #endregion
+
 }

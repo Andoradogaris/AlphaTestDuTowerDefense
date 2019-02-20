@@ -7,10 +7,6 @@ public class Shop : MonoBehaviour
     public TurretBlueprint missileLauncherTurret;
     public TurretBlueprint laserBeamerTurret;
 
-    public TrapBlueprint prefabPoison;
-    public TrapBlueprint prefabMolotov;
-    public TrapBlueprint prefabTsar;
-
     private BuildManager buildManager;
 
     private void Start()
@@ -34,23 +30,5 @@ public class Shop : MonoBehaviour
     {
         Debug.Log("Laser beamer selectionné");
         buildManager.SelectTurretToBuild(laserBeamerTurret);
-    }
-
-    public void SelectPoisonPrefabTrap()
-    {
-        Debug.Log("Piège poison selectionné");
-        buildManager.SelectTrapToBuild(prefabPoison);
-    }
-
-    public void SelectMolotovPrefabTrap()
-    {
-        Debug.Log("Coktaïl Molotov selectionné");
-        buildManager.SelectTrapToBuild(prefabMolotov);
-    }
-
-    public void SelectTsarPrefabTrap()
-    {
-        Debug.Log("Bombe Tsar selectionnée");
-        buildManager.SelectTrapToBuild(prefabTsar);
     }
 }
