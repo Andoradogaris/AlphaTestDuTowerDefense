@@ -12,6 +12,9 @@ public class NodeUI : MonoBehaviour
     public Text upgradeCost;
     public Button upgradeButton;
 
+    public Text upgradeCostA1;
+    public Button upgradeButtonA1;
+
     public void SetTarget(Node _target)
     {
         target = _target;
@@ -21,6 +24,13 @@ public class NodeUI : MonoBehaviour
         {
             upgradeCost.text = "-" + target.turretBlueprint.upgradeCost + "$";
             upgradeButton.interactable = true;
+            upgradeButtonA1.interactable = false;
+        }
+        if (!target.isUpgradedA1)
+        {
+            upgradeCostA1.text = "-" + target.turretBlueprint.upgradeCostA1 + "$";
+            upgradeButton.interactable = false;
+            upgradeButtonA1.interactable = true;
         }
         else
         {
