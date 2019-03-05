@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 
-public class BuildManager : MonoBehaviour
-{
+public class BuildManager : MonoBehaviour {
 
     #region Singleton
     public static BuildManager instance;
 
     private void Awake()
     {
-        if (instance != null)
+        if(instance != null)
         {
             Debug.LogError("Il y a déjà un BuildManager dans la scène !");
             return;
@@ -41,8 +40,8 @@ public class BuildManager : MonoBehaviour
 
     public void SelectNode(Node node)
     {
-
-        if (node == selectedNode)
+        
+        if(node == selectedNode)
         {
             DeselectNode();
             return;
@@ -59,4 +58,5 @@ public class BuildManager : MonoBehaviour
         selectedNode = null;
         nodeUI.Hide();
     }
+
 }

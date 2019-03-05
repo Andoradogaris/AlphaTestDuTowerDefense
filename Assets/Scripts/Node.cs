@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Node : MonoBehaviour
-{
+public class Node : MonoBehaviour {
 
     public Color hoverColor;
     public Color notEnoughMoneyColor;
@@ -13,12 +12,7 @@ public class Node : MonoBehaviour
     [HideInInspector]
     public TurretBlueprint turretBlueprint;
     [HideInInspector]
-    public bool isUpgraded;
-    public bool V = false;
-    public bool W = true;
-    public bool isUpgradedA1;
-    public bool V1 = false;
-    public bool W1 = true;
+    public bool isUpgraded = false;
 
     private Color startColor;
     private Renderer rend;
@@ -40,49 +34,27 @@ public class Node : MonoBehaviour
 
     public void UpgradeTurret()
     {
-        
         if (PlayerStats.money < turretBlueprint.upgradeCost)
         {
             Debug.Log("Pas assez d'argent pour améliorer la tourelle.");
             return;
         }
 
-        if(isUpgraded = V)
-        {
         PlayerStats.money -= turretBlueprint.upgradeCost;
 
         // Supression de l'ancienne tourelle
         Destroy(turret);
 
         // Création de la nouvelle tourelle améliorée.
-        GameObject A1turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
-        turret = A1turret;
+        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
 
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 1f);
 
-        isUpgraded = W;
+        isUpgraded = true;
 
         Debug.Log("Tourelle améliorée.");
-        }
-
-        if (isUpgraded = W)
-        {
-            if(isUpgradedA1 = V1)
-            {
-                PlayerStats.money -= turretBlueprint.upgradeCostA1;
-
-                Destroy(turret);
-
-                GameObject A2turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefabA1, GetBuildPosition(), Quaternion.identity);
-                turret = A2turret;
-
-                GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
-                Destroy(effect, 1f);
-
-                isUpgradedA1 = W1;
-            }
-        }
     }
 
     private void BuildTurret(TurretBlueprint blueprint)
@@ -125,7 +97,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (turret != null)
+        if(turret != null)
         {
             buildManager.SelectNode(this);
             return;
@@ -159,7 +131,7 @@ public class Node : MonoBehaviour
         {
             rend.material.color = notEnoughMoneyColor;
         }
-
+        
     }
 
     private void OnMouseExit()

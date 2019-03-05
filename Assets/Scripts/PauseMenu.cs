@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
 
     public GameObject ui;
+
     public SceneFader sceneFader;
 
     public string menuSceneName = "MainMenu";
@@ -44,9 +45,4 @@ public class PauseMenu : MonoBehaviour {
         sceneFader.FadeTo(menuSceneName);
     }
 
-    public void Credits()
-    {
-        Toggle();
-        sceneFader.FadeTo("Credits");
-    }
 }

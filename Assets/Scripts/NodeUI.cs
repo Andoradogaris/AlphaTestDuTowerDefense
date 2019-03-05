@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class NodeUI : MonoBehaviour
-{
+public class NodeUI : MonoBehaviour {
 
     public GameObject ui;
     private Node target;
@@ -12,7 +11,7 @@ public class NodeUI : MonoBehaviour
     public Text upgradeCost;
     public Button upgradeButton;
 
-    public void SetTarget(Node _target)
+	public void SetTarget (Node _target)
     {
         target = _target;
         transform.position = target.GetBuildPosition();
@@ -37,7 +36,7 @@ public class NodeUI : MonoBehaviour
     {
         ui.SetActive(false);
     }
-
+    
     public void Upgrade()
     {
         target.UpgradeTurret();

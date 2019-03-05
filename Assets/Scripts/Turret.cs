@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-public class Turret : MonoBehaviour
-{
+public class Turret : MonoBehaviour {
 
     [Header("General")]
 
@@ -33,10 +32,9 @@ public class Turret : MonoBehaviour
 
 
     // Use this for initialization
-    void Start()
-    {
+    void Start () {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-    }
+	}
 
     void UpdateTarget()
     {
@@ -47,14 +45,14 @@ public class Turret : MonoBehaviour
         foreach (GameObject enemy in ennemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < shortestDistance)
+            if(distanceToEnemy < shortestDistance)
             {
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
             }
         }
 
-        if (nearestEnemy != null && shortestDistance <= range)
+        if(nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
             targetEnemy = target.GetComponent<Enemy>();
@@ -64,11 +62,10 @@ public class Turret : MonoBehaviour
             target = null;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (target == null)
+	
+	// Update is called once per frame
+	void Update () {
+		if(target == null)
         {
             if (useLaser)
             {
@@ -99,8 +96,8 @@ public class Turret : MonoBehaviour
 
             fireCountdown -= Time.deltaTime;
         }
-
-    }
+        
+	}
 
     void LockOnTarget()
     {
@@ -115,7 +112,7 @@ public class Turret : MonoBehaviour
         targetEnemy.TakeDammage(damageOverTime * Time.deltaTime);
         targetEnemy.Slow(slowAmount);
 
-        if (lineRenderer.enabled == false)
+        if(lineRenderer.enabled == false)
         {
             lineRenderer.enabled = true;
             impactEffect.Play();
@@ -136,7 +133,7 @@ public class Turret : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
-        if (bullet != null)
+        if(bullet != null)
         {
             bullet.Seek(target);
         }

@@ -2,8 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class WaveSpawner : MonoBehaviour
-{
+public class WaveSpawner : MonoBehaviour {
 
     public static int EnemiesAlive = 0;
 
@@ -29,10 +28,9 @@ public class WaveSpawner : MonoBehaviour
         EnemiesAlive = 0;
     }
 
-    void Update()
-    {
+    void Update () {
 
-        if (EnemiesAlive > 0)
+        if(EnemiesAlive > 0)
         {
             return;
         }
@@ -56,56 +54,29 @@ public class WaveSpawner : MonoBehaviour
 
         waveCountdownTimer.text = string.Format("{0:00.00}", countdown);
 
-    }
+	}
 
     IEnumerator SpawnWave()
     {
-
+        
         PlayerStats.rounds++;
 
         Wave wave = waves[waveIndex];
 
-        EnemiesAlive = wave.count1 + wave.count2 + wave.count3;
+        EnemiesAlive = wave.count;
 
-        for (int i = 0; i < wave.count1; i++)
+        for (int i = 0; i < wave.count; i++)
         {
-            SpawnEnemy(wave.enemy1);
-            yield return new WaitForSeconds(1f / wave.rate1);
-        }
-
-        for (int i = 0; i < wave.count2; i++)
-        {
-            SpawnEnemy(wave.enemy2);
-            yield return new WaitForSeconds(1f / wave.rate2);
-        }
-
-        for (int i = 0; i < wave.count3; i++)
-        {
-            SpawnEnemy(wave.enemy3);
-            yield return new WaitForSeconds(1f / wave.rate3);
+            SpawnEnemy(wave.enemy);
+            yield return new WaitForSeconds(1f / wave.rate);
         }
 
         waveIndex++;
-        if (waveIndex == waves.Length)
-        {
-            gameManager.WinLevel();
-            this.enabled = false;
-        }
 
     }
 
     void SpawnEnemy(GameObject enemy)
     {
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
-    }
-
-    void SpawnEnemy1(GameObject enemy2)
-    {
-        Instantiate(enemy2, spawnPoint.position, spawnPoint.rotation);
-    }
-
-    void SpawnEnemy2(GameObject enemy3)
-    {
-        Instantiate(enemy3, spawnPoint.position, spawnPoint.rotation);
     }
 }
